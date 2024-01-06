@@ -1,0 +1,10 @@
+*.a
+*.so
+CMakeFiles/
+CMakeCache.txt
+*.cmake
+*.txt.user
+Makefile
+__pycache__/
+traj_test
+traj_test.*
