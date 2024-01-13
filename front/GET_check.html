@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+<script>
+    const xhr = new XMLHttpRequest();
+ 
+    xhr.onload = () => {
+        if (xhr.status == 200) { 
+            console.log(xhr.responseText);
+        } else {
+            console.log("Server response: ", xhr.statusText);
+        }
+    };
+ 
+    xhr.open("GET", "http://localhost:8080/traj_version");
+    xhr.send(null);
+</script>
+</body>
+</html>
