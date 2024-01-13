@@ -5,9 +5,3 @@ docker run -p 8080:8080 -t <name_app>
 docker ps
 docker exec -ti <commit> bash
 docker stop <commit>
-
-#Test commands: 
-
-curl -XGET http://localhost:8080/traj_version
-
-curl -XPOST http://localhost:8080/traj_data -d '{"Bullet":{"BCG7":0.247,"V0":740,"lenght":33.15,"weight":185,"diam.":7.82},"Rifle":{"zero":100,"scope_height":8,"twist":12},"Inputs":{"dist.":1000,"terrain_angle":0,"target_azimuth":-15,"latitude":54.0},"Meteo":{"temp.":15,"press.":1000,"humid.":50,"windage":[{"dist.":100,"speed":4,"dir.":90,"incl.":0},{"dist.":600,"speed":4,"dir.":90,"incl.":0},{"dist.":800,"speed":4,"dir.":90,"incl.":0},{"dist.":1000,"speed":4.0,"dir.":90,"incl.":0},{"dist.":1500,"speed":4,"dir.":90,"incl.":7}]}}'
